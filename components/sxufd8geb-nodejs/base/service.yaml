@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: sxufd8geb-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: sxufd8geb-nodejs 
+  name: sxufd8geb-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: sxufd8geb-nodejs 
